@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body { 
+            background-color: gray;
+        }
+        
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*width: 800px;*/ /* a pagina(tela) fica responsiva com a largura de 800px*/
+            min-width: 280px; /*largura mínima página*/
+            max-width: 800px; /*largura máxima da pagina*/
+            margin: auto; /*centraliza o página */
+        }
+        img { 
+            width: 100%; /* a imagem fica responsiva*/ 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividsade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nemo. Quaerat similique non impedit soluta consectetur necessitatibus nostrum nesciunt, ut sapiente voluptates? Ratione, ut culpa officia recusandae amet vel quas? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolore labore explicabo expedita ducimus eligendi doloribus, recusandae aut sunt eius, cumque delectus beatae porro fugiat facere? Repellat adipisci voluptate error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut quod ullam ad voluptates consectetur, accusamus nobis numquam nisi quae, tempore eius itaque eaque similique quibusdam dicta nulla aspernatur temporibus?</p>
+        
+        <picture> <!-- troca de imagem quando tela fica menor que 800px -->
+            <source media="(max-width:600px)" srcset="imagens/irina-blok-pq.jpg"> 
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nemo. Quaerat similique non impedit soluta consectetur necessitatibus nostrum nesciunt, ut sapiente voluptates? Ratione, ut culpa officia recusandae amet vel quas? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolore labore explicabo expedita ducimus eligendi doloribus, recusandae aut sunt eius, cumque delectus beatae porro fugiat facere? Repellat adipisci voluptate error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aut quod ullam ad voluptates consectetur, accusamus nobis numquam nisi quae, tempore eius itaque eaque similique quibusdam dicta nulla aspernatur temporibus?</p>
+    </main>
+    
+</body>
+</html>
