@@ -1,1 +1,66 @@
 @charset 'UTF-8';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray; 
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px; /*espaço de 50px para cima*/
+    /*text-transform: uppercase;*/ /*texto h1 letra maiúscula*/
+    font-variant: small-caps; /*letras em maiúscula com iniciais em destaque*/
+}
+
+header > p {
+    padding-bottom: 50px; /*espaço 50px para baixo*/
+}
+
+header a, footer a {
+    color: white; /*link na cor branca*/
+    text-decoration: none; /*retirar o sublinhado*/
+    font-weight: bolder; /*negrito*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /*aparece linha branca qnd mouse passa*/   
+}
+
+section {
+    padding-top: 10vh; /*10% altura da tela topo*/
+    padding-bottom: 10vh; /*10% altura da tela inferior*/ 
+    line-height: 2em; /*espaçamento emtre as linhas*/
+    padding-left: 30px; /*espaçamento a esquerda */
+}   
+
+ section.normal {
+    background-color: white;
+    color: black;
+} 
+
+    section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+} 
+
+    section.imagem > p {
+        width: 400px; /*largura máxima 400px*/
+        background-color: rgba(0, 0, 0, 0.253);
+    }
+
+footer {
+    background-color: black; /*fundo preto*/
+    color: white; /*fonte branca*/
+    text-align: center; /*texto centralizado*/
+    padding: 10px; /*espaçamento sup. inf. 10px*/
+}
