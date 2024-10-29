@@ -20,8 +20,16 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em; /*tamanho da fonte*/
+            font-weight: bold; /*megrito*/
+            padding: 10px; /*espaçamento*/
+            background-color: lightgrey; /*fundo*/
+
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: black;
             color: white;
         }
 
@@ -43,10 +51,11 @@
                 TR, TD, TH
     -->  
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--Título da coluna-->
+                <th scope="col" style="width: 50px;">População</th><!--controlo a largura da coluna "Width"-->
             </tr>
         </thead> 
         <tbody>
@@ -161,7 +170,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de habitantes</td> <!--Título-->
+                <th scope="row">Total de habitantes</th> <!--Título da linha-->
                 <td class="num"><strong>210.147.125</strong></td> <!--dado-->
             </tr>
         </tfoot>
