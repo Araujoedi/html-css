@@ -7,11 +7,19 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            th {color: white;
         }
 
         table {
+            width: 420px;
             border-collapse: collapse;
-            
+            position: relative;            
+        }
+
+        td, th, thead {
+            border: 1px solid black;
+            padding: 10px;          
+            text-align: center;            
         }
 
         caption {
@@ -21,12 +29,20 @@
         }
         
         th {
-            background-color: lightgray;
+            background-color: gray;
         }
-        td, th {
-            border: 1px solid gray;
+
+        td.num {
+            text-align: left;
+        }        
+
+        thead {
+            color: white;
+            border: 1px solid black;
             padding: 10px;          
-            text-align: center;
+        }
+        .num {
+            text-align: left;
         }
 
         
@@ -53,52 +69,50 @@
             <tbody>
                 
                 <tr>
-                    <td rowspan="4">Exatas</td>
-                    <td>Matemática</td>
+                    <td rowspan="4"><strong>Exatas</strong></td>
+                    <td class="num">Matemática</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Física</td>
+                    <td class="num">Física</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Química</td>
+                    <td class="num">Química</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Biologia</td>
+                    <td class="num">Biologia</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
-                <th colspan="4">Média de Exatas</th>
+                <th colspan="4" class="num">Média de Exatas</th>
+                
                 <th>0.0</th>
                 <tr>
-                    <td rowspan="2">Humanas</td>
-                    <td>História</td>
+                    <td rowspan="2"><strong>Humanas</strong></td>
+                    <td class="num">História</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
                 <tr>
-                    <td>Geografia</td>
+                    <td class="num">Geografia</td>
                     <td>0.0</td>
                     <td>0.0</td>
                     <td>0.0</td>
                 </tr>
-                <th colspan="4">Média de Humanas</th>
+                <th colspan="4" class="num">Média de Humanas</th>
                 <th>0.0</th>
 
-            </tbody>
-            
-
-        
+            </tbody> 
 
     </table>    
 </body>
